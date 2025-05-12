@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import FeatureToggle from './components/FeatureToggle';
 
 function App() {
   return (
@@ -17,7 +18,13 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+        <h2>Featuring Toggle Demo</h2>
+        <FeatureToggle isEnabled={true} featureName={"Accept Cookies"}/>
+        <FeatureToggle isEnabled={false} featureName={"Dark Mode"}/>
+        </div>
       </header>
+      
     </div>
   );
 }
